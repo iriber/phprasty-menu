@@ -2,5 +2,6 @@
 
 	<!-- declaración de los componentes -->
 	<component name="Menu" location="menu" />
+	<component name="ContextMenu" location="contextMenu" />
 	
 </rasty-application>

@@ -52,7 +52,7 @@ class Menu extends RastyComponent{
 	protected function initDefaults(){
 	
 		if( empty( $this->label ) ){
-			$this->setLabel( $this->localize("menu.label"));
+			//$this->setLabel( $this->localize("menu.label"));
 		}
 	}
 	
@@ -82,6 +82,10 @@ class Menu extends RastyComponent{
 		$xtpl->assign("menuLabel", $this->getLabel() );
 		$xtpl->assign("onclick", $this->getOnclick() );
 		$xtpl->assign("id", $this->getId() );
+		
+		if( !empty($this->label) )
+			$xtpl->parse("main.menuTitle" );
+		
 	}
 
 
