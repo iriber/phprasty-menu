@@ -99,4 +99,8 @@ class MenuOption {
 		return LinkBuilder::getPageUrl($this->getPageName(), $this->getParams() );
 	}
 	
+	public function getOnclick(){
+		return "gotoLink('". $this->getLink() . "');return false";
+	}
+	
 }
