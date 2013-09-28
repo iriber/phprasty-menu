@@ -65,7 +65,8 @@ class Menu extends RastyComponent{
 			foreach ($menuGroup->getMenuOptions() as $menuOption) {
 				$xtpl->assign("label", $menuOption->getLabel() );
 				
-				$xtpl->assign("link", $menuOption->getLink());
+				
+				$xtpl->assign("onclick", $menuOption->getOnclick());
 				
 				$img = $menuOption->getImageSource();
 				if(!empty($img)){
